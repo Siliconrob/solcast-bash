@@ -27,14 +27,12 @@ echo "export SOLCAST_API_KEY=YOUR_API_KEY" >> ~/.bash_profile;
 source ~/.bash_profile;
 ```
 
-### Check if you `environment variables` are loaded if not you may need to rerun the command `source ~/.bash_profile` or re-initialize your terminal
+### Check if your `environment variables` are loaded if not you may need to rerun the command `source ~/.bash_profile` or re-initialize your terminal
 ``` bash
 # Print environment variables
 echo "SOLCAST_API_URL = ${SOLCAST_API_URL}";
 echo "SOLCAST_API_KEY = ${SOLCAST_API_KEY}";
 ```
-
-
 
 ### Session variables for Radiation requests
 ``` bash
