@@ -46,3 +46,7 @@ get-csv "${SOLCAST_API_URL}/radiation/forecasts?longitude=${lat}&latitude=${lng}
 ```
 
 [Sample Result](samples/radiation.csv)
+
+### Sample bash script to read a csv file and get a radiation forecast for each
+
+[Radiation Forecast Script](get-rad-forecasts.sh)
