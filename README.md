@@ -4,7 +4,7 @@
 
 This guide demonstrates using curl and bash for registered users to query the Solcast API [https://api.solcast.com.au](https://api.solcast.com.au).  You will need to register your user account to obtain an API key [https://solcast.com.au/api/register](https://solcast.com.au/api/register/).  Without an API key you will not be able to successfully obtain valid API results.
 
-## Note 
+## Note
 It is **recommended** to use a robust client library for programmable use of the API, **but** sometimes a direct approach is useful
 
 ### Recommended aliases to add to your `.bash_profile`
@@ -13,7 +13,7 @@ It is **recommended** to use a robust client library for programmable use of the
 echo "alias=get-json=\"curl -X GET -H 'Accept: application/json'\"" >> ~/.bash_profile;
 # Add get-csv alias
 echo "alias=get-csv=\"curl -X GET -H 'Accept: text/csv'\"" >> ~/.bash_profile;
-# Update shell 
+# Update shell
 source ~/.bash_profile;
 ```
 
@@ -23,7 +23,7 @@ source ~/.bash_profile;
 echo "export SOLCAST_API_URL=https://api.solcast.com.au" >> ~/.bash_profile;
 # Add solcast API key
 echo "export SOLCAST_API_KEY=YOUR_API_KEY" >> ~/.bash_profile;
-# Update shell 
+# Update shell
 source ~/.bash_profile;
 ```
 
@@ -50,3 +50,14 @@ get-csv "${SOLCAST_API_URL}/radiation/forecasts?longitude=${lat}&latitude=${lng}
 ### Sample bash script to read a csv file and get a radiation forecast for each
 
 [Radiation Forecast Script](get-rad-forecasts.sh)
+
+Make the script executable `chmod a+x get-rad-forecasts.sh`
+
+Outputs results to current directory
+``` bash
+./get-rad-forecasts.sh -i samples/radiation.csv
+```
+Specify a results folder directory
+``` bash
+./get-rad-forecasts.sh -i samples/radiation.csv -o results
+```
