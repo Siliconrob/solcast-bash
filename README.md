@@ -55,9 +55,9 @@ Make the script executable `chmod a+x get-rad-forecasts.sh`
 
 Outputs results to current directory
 ``` bash
-./get-rad-forecasts.sh -i samples/radiation.csv
+./get-rad-forecasts.sh -i samples/sample_latlngs.csv
 ```
 Specify a results folder directory
 ``` bash
-./get-rad-forecasts.sh -i samples/radiation.csv -o results
+./get-rad-forecasts.sh -i samples/sample_latlngs.csv -o results
 ```
