@@ -5,7 +5,7 @@
 This guide demonstrates using curl and bash for registered users to query the Solcast API [https://api.solcast.com.au](https://api.solcast.com.au).  You will need to register your user account to obtain an API key [https://solcast.com.au/api/register](https://solcast.com.au/api/register/).  Without an API key you will not be able to successfully obtain valid API results.
 
 ## Note 
-It is **recommended** to use a robust client library for programmable usuage of the API, **but** sometimes a direct approach is useful
+It is **recommended** to use a robust client library for programmable use of the API, **but** sometimes a direct approach is useful
 
 ### Recommended aliases to add to your `.bash_profile`
 ``` bash
